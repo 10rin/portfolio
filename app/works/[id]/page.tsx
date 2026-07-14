@@ -92,8 +92,6 @@ export default async function ProjectPage({ params }: PageProps) {
             </div>
           )}
 
-
-
           {/* overview */}
           {project.description && (
             <div className="space-y-4">
@@ -117,8 +115,6 @@ export default async function ProjectPage({ params }: PageProps) {
               </p>
             </div>
           )}
-
-
         </div>
       </div>
     </main>

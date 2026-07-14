@@ -9,7 +9,7 @@ export default function Home() {
       
 
       {/* Projects List */}
-      <div className="grid md:grid-cols-3 gap-0 w-full">
+      <div className="grid md:grid-cols-4 gap-0 w-full">
         {projects.map((project, idx) => (
           <Link 
             key={idx}
@@ -19,19 +19,18 @@ export default function Home() {
             {/* Project Image */}
             {project.image && (
               <div 
-                className="relative aspect-[4/3] p-3 w-full overflow-hidden shrink-0 border border-zinc-100 dark:border-zinc-900 flex items-center justify-center  hover:bg-pink-500"
-
+                className="relative aspect-[1/1] p-3 w-full overflow-hidden shrink-0 dark:border-zinc-900 flex items-center justify-center hover:bg-brand"
                 style={project.bgColor ? { backgroundColor: project.bgColor } : undefined}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="max-h-full max-w-full object-contain" 
+                  className="max-h-full max-w-full object-contain group-hover:grayscale" 
                 />
                 {/* Hover overlay with pink background and title */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-white font-bold text-lg px-4 text-center">
+                  <span className="text-brand font-bold text-lg px-4 text-center">
                     {project.title}
                   </span>
                 </div>
