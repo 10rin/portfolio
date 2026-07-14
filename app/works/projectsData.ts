@@ -90,17 +90,17 @@ export const projectsData: Project[] = [
     "survey": []
   },
   {
-    "id": "cap5_mainvitual",
-    "title": "techne_mainvitual",
+    "id": "cap5_mainvisual",
+    "title": "techne_mainvisual",
     "description": "ポスターやフライヤー以外にも、ステッカー、立て看板、SNS広告へと横断的に使用。\n\nDeployed across various formats beyond posters and flyers, including stickers, standing signs, and social media ads.",
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
-    "image": "/works/cap5_mainvitual/01.png",
+    "image": "/works/cap5_mainvisual/01.png",
     "images": [
-      "/works/cap5_mainvitual/02.png",
-      "/works/cap5_mainvitual/03.png",
-      "/works/cap5_mainvitual/04.png"
+      "/works/cap5_mainvisual/02.png",
+      "/works/cap5_mainvisual/03.png",
+      "/works/cap5_mainvisual/04.png"
     ],
     "bgColor": "",
     "concept": "原子や分子、波や波形、自然現象などを根源的かつ直線的なモチーフとして抽出し、グラフィックスとして構築。\n\nExtracting atoms, molecules, waves, waveforms, and natural phenomena as fundamental and linear motifs to construct them into graphics.",
@@ -127,7 +127,7 @@ export const projectsData: Project[] = [
       "/works/jutei/06.jpg"
     ],
     "bgColor": "",
-    "concept": "歪み × 余白\nDUBミュージックの特徴である「重低音」をグラフィックとして表現。DUB特有の歪みやエコー、リバーブによる揺らぎをスキャナを用いた投影技法によってグラフィックに適用。スキャン中に被写体を物理的に動かすことで像を歪ませ、音響的な特徴を視覚的に表現。スキャン画像に毛筆のような滲みや筆致を見出し、書道をモチーフ余白を生かしたグラフィックはDUBミュージックの賑やかな会場にコントラストを与えた。\n\nDistortion × Negative Space\nVisualizing the \"heavy bass\" characteristic of DUB music. The fluctuations found in DUB's signature distortion, echo, and reverb are translated into graphics using a scanner-based projection technique. By physically moving the subject during the scanning process, the images are distorted to visually represent acoustic qualities. Finding brush-like bleeds and strokes within the scanned images, the graphics—inspired by calligraphy and the strategic use of negative space—provided a stark contrast to the energetic atmosphere of the DUB music venue.",
+    "concept": "歪み × 余白\nDUBミュージックの特徴である「重低音」をグラフィックとして表現。DUB特有の歪みやエコー、リバーブによる揺らぎをスキャナを用いた投影技法によってグラフィックに適用。スキャン中に被写体を物理的に動かすことで像を歪ませ、音響的な特徴を視覚的に表現。スキャン画像に毛筆のような滲みや筆致を見出し、書道をモチーフにし、余白を生かしたグラフィックはDUBミュージックの賑やかな会場にコントラストを与えた。\n\nDistortion × Negative Space\nVisualizing the \"heavy bass\" characteristic of DUB music. The fluctuations found in DUB's signature distortion, echo, and reverb are translated into graphics using a scanner-based projection technique. By physically moving the subject during the scanning process, the images are distorted to visually represent acoustic qualities. Finding brush-like bleeds and strokes within the scanned images, the graphics—inspired by calligraphy and the strategic use of negative space—provided a stark contrast to the energetic atmosphere of the DUB music venue.",
     "role": "",
     "introduction": "DUB（ダブ）とは: 1960年代後半のジャマイカでレゲエの楽曲から派生した音楽手法。オリジナル楽曲のベースやドラムを強調しつつ、空間的なエコーやリバーブといったエフェクトを大胆に加えることで、聴く者の身体を震わせるような没入的な音響体験を与える。",
     "system": "物理的スキャン技法: ティッシュや綿、ビニールテープなどの日常的な素材をフラットベッドスキャナー上で動かしながら取り込むことで、ダブレゲエ特有のエコーやリバーブ、ディレイといったエフェクトの波形を視覚的に表現した。",
@@ -152,7 +152,7 @@ export const projectsData: Project[] = [
       "/works/flower/03.jpg"
     ],
     "bgColor": "",
-    "concept": "笑顔を咲かせ、繋がりを届ける。笑顔と花の癒やし効果で能動的に笑顔をつくり、物理デバイスの開閉を通じて社会的孤独感を温和に解消する。\n\nlooming smiles, delivering connections. By leveraging the healing power of smiles and flowers to proactively evoke joy, we gently alleviate social isolation through the physical opening and closing of a device.",
+    "concept": "笑顔を咲かせ、繋がりを届ける。笑顔と花の癒やし効果で能動的に笑顔をつくり、物理デバイスの開閉を通じて社会的孤独感を温和に解消する。\n\nblooming smiles, delivering connections. By leveraging the healing power of smiles and flowers to proactively evoke joy, we gently alleviate social isolation through the physical opening and closing of a device.",
     "role": "",
     "introduction": "単身世帯者の増加: 2001年から2023年にかけて割合が約1.7倍（24.1%から34.0%）に増加。\n孤独感と健康リスク: 単身世帯者は「社会的孤独感」「情緒的孤独感」を感じやすく、その健康リスクは肥満や喫煙と同程度。睡眠の質の低下等により、5年後のうつ症状出現の確率が高い。\n笑顔と植物の効果: \n笑顔を作ることによってストレスホルモン（コルチゾールなど）が減少し血圧が低下する。\n植物や花、また笑顔を作ることでドーパミンの発生による快感が得られ、うつ状態の改善に有効とされる。",
     "system": "表情認識・通信: Webカメラで利用者の表情を捉え、PC上の ml5.js Face-detection を用いて3秒以上の笑顔を認識。その情報を WebSerialAPI を経由してPCとArduino接続された花型デバイスに送信し、サーボモーターを動作させて花びらを開閉。また、WebRTC（p5LiveMedia）を用いてお互いの表情をリアルタイムで確認可能。\n花びらの駆動メカニズム:\nサーボモーター（SG-5010）とArduinoを接続。\nモーターにより歯車が動き、外側の軸と接続されている部分が下がることで、花弁が開く物理構造。",
@@ -187,7 +187,7 @@ export const projectsData: Project[] = [
       "スキャン: 印刷された紙や構成物をフラットベッドスキャナーで読み込み、独特の質感を取り出す。",
       "レイアウト: 取り込んだタイポグラフィを用い、表紙カバーのレイアウト（Jared Diamond / The Fates of Human Societies などの表記含む）を完成させる。"
     ],
-    "outcome": "書名: Guns, Germs, and Steel: The Fates of Human Societies（邦題：銃・病原菌・鉄）\n著者: Jared Diamond\n表現上の特徴:\n人類史における人種の先先天的な優劣を否定する、近代的な人類観の提示。\n文明発展の格差は、地理的・生態学的要因に起因するという革新的提言の視覚的実証。\n広範な学際的知見（地理学、生物学、歴史学、人類学など）に基づく壮大なコンセプトの再解釈。\nアプローチ:\n人種的な優劣ではなく地理的・生態学的要因が歴史の格差を生んだという「歴史の再解釈」のコンセプトに基づき、人為的な文字デザインではなく、大地の素材である「本物の石」をタイポグラフィとして構築する。\n主な特徴:\n大地の素材によるタイポグラフィ: 実際に拾い集めた「石」をアルファベットの形状に配置し、多様性や不規則性、複雑性を持つ大地の物質感を取り入れる。\n石のスキャンによるレイアウト: 物理的に並べた石をスキャナーで読み込み、独特のざらついた質感やリアリティを表現したカバーレイアウト。",
+    "outcome": "書名: Guns, Germs, and Steel: The Fates of Human Societies（邦題：銃・病原菌・鉄）\n著者: Jared Diamond\n表現上の特徴:\n人類史における人種の先天的な優劣を否定する、近代的な人類観の提示。\n文明発展の格差は、地理的・生態学的要因に起因するという革新的提言の視覚的実証。\n広範な学際的知見（地理学、生物学、歴史学、人類学など）に基づく壮大なコンセプトの再解釈。\nアプローチ:\n人種的な優劣ではなく地理的・生態学的要因が歴史の格差を生んだという「歴史の再解釈」のコンセプトに基づき、人為的な文字デザインではなく、大地の素材である「本物の石」をタイポグラフィとして構築する。\n主な特徴:\n大地の素材によるタイポグラフィ: 実際に拾い集めた「石」をアルファベットの形状に配置し、多様性や不規則性、複雑性を持つ大地の物質感を取り入れる。\n石のスキャンによるレイアウト: 物理的に並べた石をスキャナーで読み込み、独特のざらついた質感やリアリティを表現したカバーレイアウト。",
     "survey": []
   },
   {
@@ -210,7 +210,7 @@ export const projectsData: Project[] = [
     "procedure": [
       "プロセス / 着想 (Process): 四季の変化を取り入れる日本庭園の思想からインスピレーションを受け、1日を通じた微細な時間変化を楽しめる庭園を設計。出勤時（朝）、ランチ休憩（昼）、退勤時（夜）といった働く人のタイムラインに寄り添い、太陽の移動による光の表情の変化を取り入れた。\n時間帯別の演出想定 (Time Labels):\nMORNING (朝): 出勤時の爽やかな光\nEVENING (夕方): 退勤前のノスタルジックで長い影\nNIGHT (夜): 人工照明と闇のコントラスト"
     ],
-    "outcome": "アプローチ:\n時間帯（出勤時、昼休み、退勤時）による太陽の軌道変化をデザインに取り入れ、都市の人工的な環境下で光と影の移ろいを魅力的に演出する空間構成。\n主な特徴:\n時間の変化を楽しむ庭園: 朝（MORNING）、夕方（EVENING）、夜（NIGHT）といった1日のタイムサイクルに合わせた光の差し込み方や影の形を活かす設計。\n光を引き立てる造形: 周囲 of ビル群（Built-up area）がもたらす幾何学的・人工的な環境に対し、自然光の美しさがより際立つ構造。",
+    "outcome": "アプローチ:\n時間帯（出勤時、昼休み、退勤時）による太陽の軌道変化をデザインに取り入れ、都市の人工的な環境下で光と影の移ろいを魅力的に演出する空間構成。\n主な特徴:\n時間の変化を楽しむ庭園: 朝（MORNING）、夕方（EVENING）、夜（NIGHT）といった1日のタイムサイクルに合わせた光の差し込み方や影の形を活かす設計。\n光を引き立てる造形: 周囲のビル群（Built-up area）がもたらす幾何学的・人工的な環境に対し、自然光の美しさがより際立つ構造。",
     "survey": []
   },
   {
@@ -231,7 +231,7 @@ export const projectsData: Project[] = [
     "introduction": "",
     "system": "",
     "procedure": [],
-    "outcome": "アプローチ:\n歩行者の一人称視点（五感・スケール感）に特化した「行った気になる」ガイドブック。\n主な特徴:\n馴染み深いデザイン: 『地球の歩き方』をオマージュした親しみやすく完成度の高いデザイン。\nリアルな旅行計画の提示: 月面での酒造（獺祭 MOON）や宇宙美食など、実在するリアリティのある計画を掲載。\n立体モデル of 併用: 3Dプリンターによる月面地形モデルを併用し、視覚と触覚の双方からアプローチ。",
+    "outcome": "アプローチ:\n歩行者の一人称視点（五感・スケール感）に特化した「行った気になる」ガイドブック。\n主な特徴:\n馴染み深いデザイン: 『地球の歩き方』をオマージュした親しみやすく完成度の高いデザイン。\nリアルな旅行計画の提示: 月面での酒造（獺祭 MOON）や宇宙美食など、実在するリアリティのある計画を掲載。\n立体モデルの併用: 3Dプリンターによる月面地形モデルを併用し、視覚と触覚の双方からアプローチ。",
     "survey": []
   },
   {
@@ -244,7 +244,7 @@ export const projectsData: Project[] = [
     "image": "/works/accountbook/01.jpg",
     "images": [],
     "bgColor": "",
-    "concept": "ローカル・自動・可愛い家計簿。完全ローカル of 安心感とAIによる手入力ゼロの快適さを両立し、可愛いダッシュボードで日々のお金の管理を楽しく継続させる。\n\nA local, automated, and cute household account book. Combining the peace of mind of a fully local system with the convenience of zero manual entry via AI, all within a cute dashboard that makes daily money management a joyful, sustainable habit.",
+    "concept": "ローカル・自動・可愛い家計簿。完全ローカルの安心感とAIによる手入力ゼロの快適さを両立し、可愛いダッシュボードで日々のお金の管理を楽しく継続させる。\n\nA local, automated, and cute household account book. Combining the peace of mind of a fully local system with the convenience of zero manual entry via AI, all within a cute dashboard that makes daily money management a joyful, sustainable habit.",
     "role": "",
     "introduction": "",
     "system": "エンジン（AI）: Gemini API (Gemini 2.5 Flash)\n監視スクリプト: Python 3.10+, watchdog\nフロントエンド / 可視化: Obsidian, Dataviewjs, Obsidian Charts\niOS連携: iOSショートカットアプリ\n動作環境: macOS (常時監視: launchd または python バックグラウンドプロセス), iOS",
