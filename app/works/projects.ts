@@ -131,12 +131,7 @@ function parseMarkdown(content: string, folderName: string): Partial<Project> {
         break;
         
       case 'overview':
-        const descriptionEndIdx = body.indexOf('\n*');
-        let desc = body;
-        if (descriptionEndIdx !== -1) {
-          desc = body.substring(0, descriptionEndIdx).trim();
-        }
-        result.description = cleanMarkdownText(desc);
+        result.description = cleanMarkdownText(body);
         break;
         
       case 'concept':

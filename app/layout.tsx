@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "野々川 凜 | ポートフォリオ",
+  title: "rin_nonokawa",
 };
 
 export default function RootLayout({
@@ -39,7 +39,7 @@ export default function RootLayout({
 
         {/* Shared Footer */}
         <footer className="w-full max-w-full mx-auto px-6 py-8 border-t border-zinc-200/60 dark:border-zinc-800/60 flex justify-between items-center text-xs text-zinc-500 shrink-0">
-          <p>© {new Date().getFullYear()} 野々川 凜</p>
+          <p>© {new Date().getFullYear()} rin nonokawa</p>
           {/* <div className="flex gap-4">
             <span className="hover:text-brand transition-colors cursor-default">Next.js 16</span>
             <span>•</span>
