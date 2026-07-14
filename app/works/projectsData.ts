@@ -25,12 +25,12 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "卒業制作 2025-2026",
-    "image": "/portfolio/works/timesector/01.JPG",
+    "image": "/works/timesector/01.JPG",
     "images": [
-      "/portfolio/works/timesector/02.JPG",
-      "/portfolio/works/timesector/03.png",
-      "/portfolio/works/timesector/05.JPG",
-      "/portfolio/works/timesector/卒展ポスター_3連最終-02.png"
+      "/works/timesector/02.JPG",
+      "/works/timesector/03.png",
+      "/works/timesector/05.JPG",
+      "/works/timesector/卒展ポスター_3連最終-02.png"
     ],
     "bgColor": "",
     "concept": "Slit-Scan × 映像生成 × ドローイング操作\nスリットスキャンは静止画を時間軸に沿って積み重ねた「空時間ボリューム」としての映像から特定の場所を切り出して平面上に配置することで生み出される表現である。通常、切り出される場所は事前に選出され、y軸に並行した直線のピクセル列をt軸方向に沿って取り出し、連続に配置する。\n本研究では、「事前」に選定される「直線」のスリットを、「インタラクティブ」で「自由なドローイング」に拡張した。鑑賞者にとって受動的であったスリットスキャン表現を能動的なものにするだけでなく、コーディングや高度なツールを使用せず、容易に自由なスリットスキャン制作体験を可能にした。\n\nSlit-Scan × Video Generation × Drawing Control\nSlit-scan is an expression created by extracting a specific area from a \"space-time volume\"—video consisting of still images stacked along a time axis—and arranging it on a 2D plane. Typically, the extracted area is predetermined, where a linear sequence of pixels parallel to the y-axis is extracted along the t-axis and arranged consecutively.In this research, the \"predetermined linear\" slit has been expanded into \"interactive, free-form drawing.\" This not only transforms the slit-scan expression from a passive experience for the viewer into an active one, but also enables an effortless, creative slit-scan experience without the need for coding or advanced tools.",
@@ -53,10 +53,10 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
-    "image": "/portfolio/works/cap5/01.jpg",
+    "image": "/works/cap5/01.jpg",
     "images": [
-      "/portfolio/works/cap5/02.jpg",
-      "/portfolio/works/cap5/03.JPG"
+      "/works/cap5/02.jpg",
+      "/works/cap5/03.JPG"
     ],
     "bgColor": "",
     "concept": "techne（創造の結晶）。多岐にわたる専門性や分業された表現活動を、デザイン, テクノロジー, 演出の融合を通して一つの創作知識へと昇華する。\n\ntechne (the crystallization of creation). To sublimate diverse expertise and fragmented creative activities into a single body of creative knowledge through the fusion of design, technology, and direction.",
@@ -76,9 +76,9 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
-    "image": "/portfolio/works/cap5_lookbook/01.jpg",
+    "image": "/works/cap5_lookbook/01.jpg",
     "images": [
-      "/portfolio/works/cap5_lookbook/05.jpg"
+      "/works/cap5_lookbook/05.jpg"
     ],
     "bgColor": "",
     "concept": "単なる記録媒体を超えたカタログとしての役割を持たせる。\n\nPosition it to serve as a catalog that goes beyond being a mere recording medium.",
@@ -96,11 +96,11 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
-    "image": "/portfolio/works/cap5_mainvitual/01.png",
+    "image": "/works/cap5_mainvitual/01.png",
     "images": [
-      "/portfolio/works/cap5_mainvitual/02.png",
-      "/portfolio/works/cap5_mainvitual/03.png",
-      "/portfolio/works/cap5_mainvitual/04.png"
+      "/works/cap5_mainvitual/02.png",
+      "/works/cap5_mainvitual/03.png",
+      "/works/cap5_mainvitual/04.png"
     ],
     "bgColor": "",
     "concept": "原子や分子、波や波形、自然現象などを根源的かつ直線的なモチーフとして抽出し、グラフィックスとして構築。\n\nExtracting atoms, molecules, waves, waveforms, and natural phenomena as fundamental and linear motifs to construct them into graphics.",
@@ -118,13 +118,13 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2024-2025 自主制作",
-    "image": "/portfolio/works/jutei/01.png",
+    "image": "/works/jutei/01.png",
     "images": [
-      "/portfolio/works/jutei/02.png",
-      "/portfolio/works/jutei/03.jpg",
-      "/portfolio/works/jutei/04.png",
-      "/portfolio/works/jutei/05.png",
-      "/portfolio/works/jutei/06.jpg"
+      "/works/jutei/02.png",
+      "/works/jutei/03.jpg",
+      "/works/jutei/04.png",
+      "/works/jutei/05.png",
+      "/works/jutei/06.jpg"
     ],
     "bgColor": "",
     "concept": "歪み × 余白\nDUBミュージックの特徴である「重低音」をグラフィックとして表現。DUB特有の歪みやエコー、リバーブによる揺らぎをスキャナを用いた投影技法によってグラフィックに適用。スキャン中に被写体を物理的に動かすことで像を歪ませ、音響的な特徴を視覚的に表現。スキャン画像に毛筆のような滲みや筆致を見出し、書道をモチーフ余白を生かしたグラフィックはDUBミュージックの賑やかな会場にコントラストを与えた。\n\nDistortion × Negative Space\nVisualizing the \"heavy bass\" characteristic of DUB music. The fluctuations found in DUB's signature distortion, echo, and reverb are translated into graphics using a scanner-based projection technique. By physically moving the subject during the scanning process, the images are distorted to visually represent acoustic qualities. Finding brush-like bleeds and strokes within the scanned images, the graphics—inspired by calligraphy and the strategic use of negative space—provided a stark contrast to the energetic atmosphere of the DUB music venue.",
@@ -146,10 +146,10 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2025 インタラクティブデザイン実習/演習Ⅱ",
-    "image": "/portfolio/works/flower/01.jpg",
+    "image": "/works/flower/01.jpg",
     "images": [
-      "/portfolio/works/flower/02.jpg",
-      "/portfolio/works/flower/03.jpg"
+      "/works/flower/02.jpg",
+      "/works/flower/03.jpg"
     ],
     "bgColor": "",
     "concept": "笑顔を咲かせ、繋がりを届ける。笑顔と花の癒やし効果で能動的に笑顔をつくり、物理デバイスの開閉を通じて社会的孤独感を温和に解消する。\n\nlooming smiles, delivering connections. By leveraging the healing power of smiles and flowers to proactively evoke joy, we gently alleviate social isolation through the physical opening and closing of a device.",
@@ -172,9 +172,9 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2024 グラフィックデザイン実習/演習Ⅰ",
-    "image": "/portfolio/works/bookdesign/01.jpg",
+    "image": "/works/bookdesign/01.jpg",
     "images": [
-      "/portfolio/works/bookdesign/02.png"
+      "/works/bookdesign/02.png"
     ],
     "bgColor": "",
     "concept": "地理的決定論の視覚化。文明発展の格差が地理的・生態学的要因によるものであるという本質を、大地の一部である「石」を用いたタイポグラフィで表現する。\n\nVisualizing geographical determinism. Using typography crafted from \"stones\"—elements of the earth—to express the essence that the disparities in civilizational development are driven by geographical and ecological factors.",
@@ -197,10 +197,10 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2023 Basic of Space Design",
-    "image": "/portfolio/works/spacedesign/01.jpg",
+    "image": "/works/spacedesign/01.jpg",
     "images": [
-      "/portfolio/works/spacedesign/02.png",
-      "/portfolio/works/spacedesign/03.png"
+      "/works/spacedesign/02.png",
+      "/works/spacedesign/03.png"
     ],
     "bgColor": "",
     "concept": "時間とともに表情を変える庭。日本庭園の美学を都市空間に再解釈し、太陽の動きそのものを主役に据え、人々に変化に富んだ憩いの場を提供する。\n\nA garden that transforms with the passing hours. By reinterpreting the aesthetics of Japanese gardens within an urban setting and casting the movement of the sun as the protagonist, it offers people a dynamic sanctuary of shifting beauty.",
@@ -220,10 +220,10 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2026 研究プロジェクト演習",
-    "image": "/portfolio/works/moon/01.jpg",
+    "image": "/works/moon/01.jpg",
     "images": [
-      "/portfolio/works/moon/02.jpg",
-      "/portfolio/works/moon/フライヤー_I班.jpg"
+      "/works/moon/02.jpg",
+      "/works/moon/フライヤー_I班.jpg"
     ],
     "bgColor": "",
     "concept": "行った気になる。旅行前の調べるワクワク感を再現し、月面をどう歩き何を感じるかという身体的体験と紙の触覚を通じて月を疑似体験させる。\n\nIt makes you feel as if you've actually been there. By recreating the excitement of researching before a trip, it allows you to pseudo-experience the Moon through the tactile sensation of paper and a physical simulation of how one would walk and feel on the lunar surface.",
@@ -241,7 +241,7 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2025-2026 自主制作",
-    "image": "/portfolio/works/accountbook/01.jpg",
+    "image": "/works/accountbook/01.jpg",
     "images": [],
     "bgColor": "",
     "concept": "ローカル・自動・可愛い家計簿。完全ローカル of 安心感とAIによる手入力ゼロの快適さを両立し、可愛いダッシュボードで日々のお金の管理を楽しく継続させる。\n\nA local, automated, and cute household account book. Combining the peace of mind of a fully local system with the convenience of zero manual entry via AI, all within a cute dashboard that makes daily money management a joyful, sustainable habit.",
