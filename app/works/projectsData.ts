@@ -28,9 +28,9 @@ export const projectsData: Project[] = [
     "image": "/works/timesector/01.JPG",
     "images": [
       "/works/timesector/02.JPG",
-      "/works/timesector/03.png",
+      "/works/timesector/03.jpg",
       "/works/timesector/05.JPG",
-      "/works/timesector/卒展ポスター_3連最終-02.png"
+      "/works/timesector/卒展ポスター_3連最終-02.jpg"
     ],
     "bgColor": "",
     "concept": "Slit-Scan × 映像生成 × ドローイング操作\nスリットスキャンは静止画を時間軸に沿って積み重ねた「空時間ボリューム」としての映像から特定の場所を切り出して平面上に配置することで生み出される表現である。通常、切り出される場所は事前に選出され、y軸に並行した直線のピクセル列をt軸方向に沿って取り出し、連続に配置する。\n本研究では、「事前」に選定される「直線」のスリットを、「インタラクティブ」で「自由なドローイング」に拡張した。鑑賞者にとって受動的であったスリットスキャン表現を能動的なものにするだけでなく、コーディングや高度なツールを使用せず、容易に自由なスリットスキャン制作体験を可能にした。\n\nSlit-Scan × Video Generation × Drawing Control\nSlit-scan is an expression created by extracting a specific area from a \"space-time volume\"—video consisting of still images stacked along a time axis—and arranging it on a 2D plane. Typically, the extracted area is predetermined, where a linear sequence of pixels parallel to the y-axis is extracted along the t-axis and arranged consecutively.In this research, the \"predetermined linear\" slit has been expanded into \"interactive, free-form drawing.\" This not only transforms the slit-scan expression from a passive experience for the viewer into an active one, but also enables an effortless, creative slit-scan experience without the need for coding or advanced tools.",
@@ -96,11 +96,11 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
-    "image": "/works/cap5_mainvisual/01.png",
+    "image": "/works/cap5_mainvisual/01.jpg",
     "images": [
-      "/works/cap5_mainvisual/02.png",
-      "/works/cap5_mainvisual/03.png",
-      "/works/cap5_mainvisual/04.png"
+      "/works/cap5_mainvisual/02.jpg",
+      "/works/cap5_mainvisual/03.jpg",
+      "/works/cap5_mainvisual/04.jpg"
     ],
     "bgColor": "",
     "concept": "原子や分子、波や波形、自然現象などを根源的かつ直線的なモチーフとして抽出し、グラフィックスとして構築。\n\nExtracting atoms, molecules, waves, waveforms, and natural phenomena as fundamental and linear motifs to construct them into graphics.",
@@ -118,12 +118,12 @@ export const projectsData: Project[] = [
     "tags": [],
     "link": "#",
     "date": "2024-2025 自主制作",
-    "image": "/works/jutei/01.png",
+    "image": "/works/jutei/01.jpg",
     "images": [
-      "/works/jutei/02.png",
+      "/works/jutei/02.jpg",
       "/works/jutei/03.jpg",
-      "/works/jutei/04.png",
-      "/works/jutei/05.png",
+      "/works/jutei/04.jpg",
+      "/works/jutei/05.jpg",
       "/works/jutei/06.jpg"
     ],
     "bgColor": "",
@@ -174,7 +174,7 @@ export const projectsData: Project[] = [
     "date": "2024 グラフィックデザイン実習/演習Ⅰ",
     "image": "/works/bookdesign/01.jpg",
     "images": [
-      "/works/bookdesign/02.png"
+      "/works/bookdesign/02.jpg"
     ],
     "bgColor": "",
     "concept": "地理的決定論の視覚化。文明発展の格差が地理的・生態学的要因によるものであるという本質を、大地の一部である「石」を用いたタイポグラフィで表現する。\n\nVisualizing geographical determinism. Using typography crafted from \"stones\"—elements of the earth—to express the essence that the disparities in civilizational development are driven by geographical and ecological factors.",
@@ -199,8 +199,8 @@ export const projectsData: Project[] = [
     "date": "2023 Basic of Space Design",
     "image": "/works/spacedesign/01.jpg",
     "images": [
-      "/works/spacedesign/02.png",
-      "/works/spacedesign/03.png"
+      "/works/spacedesign/02.jpg",
+      "/works/spacedesign/03.jpg"
     ],
     "bgColor": "",
     "concept": "時間とともに表情を変える庭。日本庭園の美学を都市空間に再解釈し、太陽の動きそのものを主役に据え、人々に変化に富んだ憩いの場を提供する。\n\nA garden that transforms with the passing hours. By reinterpreting the aesthetics of Japanese gardens within an urban setting and casting the movement of the sun as the protagonist, it offers people a dynamic sanctuary of shifting beauty.",
