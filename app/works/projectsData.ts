@@ -9,6 +9,7 @@ export interface Project {
   images?: string[];
   bgColor?: string;
   concept?: string;
+  content?: string;
   role?: string;
   introduction?: string;
   system?: string;
@@ -18,22 +19,23 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
+
   {
     "id": "timesector",
-    "title": "Timesector",
-    "description": "Timesector:Time(時間)とSection(区切り、部分)による造語\nSlit-Scanによる映像の「時間描画」の操作をインタラクティブ、直感的に行うためのアプリケーション\n\nTimesector: A coined word combining \"Time\" and \"Section.\"\nAn application for interactive and intuitive manipulation of \"time drawing\" in Slit-Scan imagery.",
+    "title": "timesector",
+    "description": "timesector:time(時間)とSection(区切り、部分)による造語\nSlit-Scanによる映像の「時間描画」の操作をインタラクティブ、直感的に行うためのアプリケーション",
     "tags": [],
     "link": "#",
     "date": "卒業制作 2025-2026",
-    "image": "/works/timesector/01.JPG",
+    "image": "/works/timesector/01.jpg",
     "images": [
-      "/works/timesector/02.JPG",
+      "/works/timesector/02.jpg",
       "/works/timesector/03.jpg",
-      "/works/timesector/05.JPG",
-      "/works/timesector/卒展ポスター_3連最終-02.jpg"
+      "/works/timesector/05.jpg",
+      "/works/timesector/06.jpg"
     ],
     "bgColor": "",
-    "concept": "Slit-Scan × 映像生成 × ドローイング操作\nスリットスキャンは静止画を時間軸に沿って積み重ねた「空時間ボリューム」としての映像から特定の場所を切り出して平面上に配置することで生み出される表現である。通常、切り出される場所は事前に選出され、y軸に並行した直線のピクセル列をt軸方向に沿って取り出し、連続に配置する。\n本研究では、「事前」に選定される「直線」のスリットを、「インタラクティブ」で「自由なドローイング」に拡張した。鑑賞者にとって受動的であったスリットスキャン表現を能動的なものにするだけでなく、コーディングや高度なツールを使用せず、容易に自由なスリットスキャン制作体験を可能にした。\n\nSlit-Scan × Video Generation × Drawing Control\nSlit-scan is an expression created by extracting a specific area from a \"space-time volume\"—video consisting of still images stacked along a time axis—and arranging it on a 2D plane. Typically, the extracted area is predetermined, where a linear sequence of pixels parallel to the y-axis is extracted along the t-axis and arranged consecutively.In this research, the \"predetermined linear\" slit has been expanded into \"interactive, free-form drawing.\" This not only transforms the slit-scan expression from a passive experience for the viewer into an active one, but also enables an effortless, creative slit-scan experience without the need for coding or advanced tools.",
+    "concept": "Slit-Scan × 映像生成 × ドローイング操作\nスリットスキャンは静止画を時間軸に沿って積み重ねた「空時間ボリューム」としての映像から特定の場所を切り出して平面上に配置することで生み出される表現である。通常、切り出される場所は事前に選出され、y軸に並行した直線のピクセル列をt軸方向に沿って取り出し、連続に配置する。\n本研究では、「事前」に選定される「直線」のスリットを、「インタラクティブ」で「自由なドローイング」に拡張した。鑑賞者にとって受動的であったスリットスキャン表現を能動的なものにするだけでなく、コーディングや高度なツールを使用せず、容易に自由なスリットスキャン制作体験を可能にした。",
     "role": "",
     "introduction": "",
     "system": "機能: 動画読み込み、3Dボリューム処理、UI表示、生成フレームの再生管理、画像・動画の描画表示\nBackend: SlitScanProcessor\nFrontend: WebKit + p5.js (WebGLレンダリング)\n動作環境: macOS Native Framework Cocoa/AVKit\n使用言語: C++17, Objective-C++, JavaScript",
@@ -46,20 +48,58 @@ export const projectsData: Project[] = [
     "outcome": "映像生成の仕組み: ユーザーが描いた線は、3Dボリュームを切り取る断面として解釈され、対応する画素を抽出して新たな画像を生成する。さらに、選択した方向へ断面を連続的に移動させることで、時間や空間が歪んだ独特のスリットスキャン映像をリアルタイムに生成する。線の形状や移動方向によって、元映像の時間構造が異なる形で再構成される。\n\n*アプローチ:\n3Dボリュームのインタラクティブ表示とキャンバスへの線描画により、スリットスキャンを受動的表現から能動的な探索体験へ昇華。\n 主な特徴:\n直感的な「時間描画」操作: 3つのキャンバス上で、マウスドラッグにより描画した自由な曲線に沿って、リアルタイムにスリットスキャン処理を実行。\n3Dボリュームによる可視化: 選択した動画を3D空間上の立体として表示し、マウス操作で回転・拡大縮小しながら構造を把握可能。\n独自のグリッチと時間再構成: 線の形状や移動方向により、意図を超えた歪みやねじれを持った映像を出力。",
     "survey": []
   },
+
+
+  {
+  "id": "timesector2",
+  "title": "timesector2",
+  "description": "[timesector](/works/timesector)を改良した、timesector2\ntimesector:time(時間)とSection(区切り、部分)による造語\nSlit-Scanによる映像の「時間描画」の操作をインタラクティブ、直感的に行うためのwebアプリケーション",
+  "tags": [],
+  "link": "https://10rin.github.io/timesector-web/",
+  "date": "2026",
+  "image": "/works/timesector2/01.jpg",
+  "images": [
+    "/works/timesector2/02.jpg",
+    "/works/timesector2/03.jpg",
+    "/works/timesector2/04.jpg",
+  ],
+  "concept": "",
+  },
+
+
+  {
+  "id": "seikatsu",
+  "title": "生活所作標本/生活所作合理標本",
+  "description": "日常生活における「体験プロセスの手触りや価値」を再発見するための、日常の行為を音声として記録・標本化（アーカイブ）するプロジェクト。",
+  "tags": [],
+  "link": "#",
+  "date": "2026視覚伝達特論",
+  "image": "/works/seikatsu/01.jpg",
+  "images": [
+    "/works/seikatsu/02.jpg",
+    "/works/seikatsu/03.jpg",
+    "/works/seikatsu/04.jpg",
+  ],
+  "concept": "過度な効率化や技術の進展に伴い、日常生活における「体験プロセスの手触りや価値」が失われ、意識されにくくなっている。\n人は結果だけでなく過程そのものにも価値を感じるという視点から、日常の行為を音声としてmp3ファイルとして記録・標本化（アーカイブ）し、効率化によって見落とされがちなプロセスの意味や豊かさを再発見するきっかけを提供する。",
+  "content": "掃除：ほうき × 掃除機\n支払い：現金 × キャッシュレス\n沸かす：やかん × 電気ケトル\n淹れる：ハンドドリップ × インスタント\n書く：ペン × キーボード\n灯す：マッチ × ライター\n 聴く：レコード × ストリーミング",
+  },
+
+
+
   {
     "id": "cap5",
     "title": "techne(Cap5 Fashion Show)",
-    "description": "約50名のメンバーを統括する代表として組織の再構築とショー全体のディレクションを行い、満席となる約300名を動員してショーを成功に導いたプロジェクト。\n\nAs the leader overseeing approximately 50 members, I restructured the organization and directed the entire show, successfully attracting a full house of around 300 attendees.",
+    "description": "約50名のメンバーを統括する代表として組織の再構築とショー全体のディレクションを行い、満席となる約300名を動員してショーを成功に導いたプロジェクト。",
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
     "image": "/works/cap5/01.jpg",
     "images": [
       "/works/cap5/02.jpg",
-      "/works/cap5/03.JPG"
+      "/works/cap5/03.jpg"
     ],
     "bgColor": "",
-    "concept": "techne（創造の結晶）。多岐にわたる専門性や分業された表現活動を、デザイン, テクノロジー, 演出の融合を通して一つの創作知識へと昇華する。\n\ntechne (the crystallization of creation). To sublimate diverse expertise and fragmented creative activities into a single body of creative knowledge through the fusion of design, technology, and direction.",
+    "concept": "techne（創造の結晶）。多岐にわたる専門性や分業された表現活動を、デザイン, テクノロジー, 演出の融合を通して一つの創作知識へと昇華する。",
     "role": "",
     "introduction": "",
     "system": "役割/担当: 舞台演出コンセプト企画・設計、演出要件の整理・システム仕様策定\n照明制御: TouchDesignerで生成した照明パターンをOSC通信によってESP32へ転送し、LEDポールを制御する仕組みを採用。\nスクリーン制作: イレクターパイプで自作したフレームに網戸用のネットを張り、映像を投影する透過スクリーンとして活用。\n衣装のデジタル投影: 3Dスキャンした衣装データからメッシュを作成し、TouchDesignerを用いてショーの展開に合わせて投影を実行。",
@@ -69,10 +109,12 @@ export const projectsData: Project[] = [
     "outcome": "ルックブックの制作: 過去に衣装アーカイブの体制が整っていなかった課題に対し、単なる記録媒体を超えたブランドカタログとしてのルックブックを制作・販売。\n*   アプローチ:\n分業化されたデザイン・メイク・演出等の専門性を、古代ギリシアの「創造能力の結晶」である『techne』というテーマのもとに一つのショーとして統合。\n主な特徴:\n組織の再構築とディレクション: コロナ禍で弱体化した約50名のサークルを代表として統括し、公演を成功へ導く。\nインタラクティブな舞台演出: TouchDesignerや透過スクリーン、衣装の3Dスキャン投影など技術的アプローチを採用。\nルックブックの企画と物販: ブランドカタログとしてのルックブックを制作・販売し、次年度の制作費の健全化を確立。",
     "survey": []
   },
+
+
   {
     "id": "cap5_lookbook",
     "title": "techne_lookbook",
-    "description": "ルックブックを制作。\n\nCreating a lookbook.",
+    "description": "ルックブックを制作。",
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
@@ -81,7 +123,7 @@ export const projectsData: Project[] = [
       "/works/cap5_lookbook/05.jpg"
     ],
     "bgColor": "",
-    "concept": "単なる記録媒体を超えたカタログとしての役割を持たせる。\n\nPosition it to serve as a catalog that goes beyond being a mere recording medium.",
+    "concept": "単なる記録媒体を超えたカタログとしての役割を持たせる。",
     "role": "",
     "introduction": "",
     "system": "",
@@ -89,10 +131,12 @@ export const projectsData: Project[] = [
     "outcome": "",
     "survey": []
   },
+
+
   {
     "id": "cap5_mainvisual",
     "title": "techne_mainvisual",
-    "description": "ポスターやフライヤー以外にも、ステッカー、立て看板、SNS広告へと横断的に使用。\n\nDeployed across various formats beyond posters and flyers, including stickers, standing signs, and social media ads.",
+    "description": "ポスターやフライヤー以外にも、ステッカー、立て看板、SNS広告へと横断的に使用。",
     "tags": [],
     "link": "#",
     "date": "2022-2023 自主制作（サークル活動）",
@@ -103,7 +147,7 @@ export const projectsData: Project[] = [
       "/works/cap5_mainvisual/04.jpg"
     ],
     "bgColor": "",
-    "concept": "原子や分子、波や波形、自然現象などを根源的かつ直線的なモチーフとして抽出し、グラフィックスとして構築。\n\nExtracting atoms, molecules, waves, waveforms, and natural phenomena as fundamental and linear motifs to construct them into graphics.",
+    "concept": "原子や分子、波や波形、自然現象などを根源的かつ直線的なモチーフとして抽出し、グラフィックスとして構築。",
     "role": "",
     "introduction": "",
     "system": "",
@@ -111,10 +155,12 @@ export const projectsData: Project[] = [
     "outcome": "",
     "survey": []
   },
+
+
   {
     "id": "jutei",
     "title": "重低",
-    "description": "DUBグループ「重低」のイベントフライヤー。\n\nEvent flyer for the DUB group \"Jutei\".",
+    "description": "DUBグループ「重低」のイベントフライヤー。",
     "tags": [],
     "link": "#",
     "date": "2024-2025 自主制作",
@@ -127,7 +173,7 @@ export const projectsData: Project[] = [
       "/works/jutei/06.jpg"
     ],
     "bgColor": "",
-    "concept": "歪み × 余白\nDUBミュージックの特徴である「重低音」をグラフィックとして表現。DUB特有の歪みやエコー、リバーブによる揺らぎをスキャナを用いた投影技法によってグラフィックに適用。スキャン中に被写体を物理的に動かすことで像を歪ませ、音響的な特徴を視覚的に表現。スキャン画像に毛筆のような滲みや筆致を見出し、書道をモチーフにし、余白を生かしたグラフィックはDUBミュージックの賑やかな会場にコントラストを与えた。\n\nDistortion × Negative Space\nVisualizing the \"heavy bass\" characteristic of DUB music. The fluctuations found in DUB's signature distortion, echo, and reverb are translated into graphics using a scanner-based projection technique. By physically moving the subject during the scanning process, the images are distorted to visually represent acoustic qualities. Finding brush-like bleeds and strokes within the scanned images, the graphics—inspired by calligraphy and the strategic use of negative space—provided a stark contrast to the energetic atmosphere of the DUB music venue.",
+    "concept": "歪み × 余白\nDUBミュージックの特徴である「重低音」をグラフィックとして表現。DUB特有の歪みやエコー、リバーブによる揺らぎをスキャナを用いた投影技法によってグラフィックに適用。スキャン中に被写体を物理的に動かすことで像を歪ませ、音響的な特徴を視覚的に表現。スキャン画像に毛筆のような滲みや筆致を見出し、書道をモチーフにし、余白を生かしたグラフィックはDUBミュージックの賑やかな会場にコントラストを与えた。",
     "role": "",
     "introduction": "DUB（ダブ）とは: 1960年代後半のジャマイカでレゲエの楽曲から派生した音楽手法。オリジナル楽曲のベースやドラムを強調しつつ、空間的なエコーやリバーブといったエフェクトを大胆に加えることで、聴く者の身体を震わせるような没入的な音響体験を与える。",
     "system": "物理的スキャン技法: ティッシュや綿、ビニールテープなどの日常的な素材をフラットベッドスキャナー上で動かしながら取り込むことで、ダブレゲエ特有のエコーやリバーブ、ディレイといったエフェクトの波形を視覚的に表現した。",
@@ -139,10 +185,29 @@ export const projectsData: Project[] = [
       "習字のイベントロゴ・旗"
     ]
   },
+
+{
+  "id": "busycom",
+  "title": "Q-me (キューミー)",
+  "description": "学生の聞きたいを叶えるプラットフォーム\n学生同士が完全無料でアンケートを作成・回答できる特化型プラットフォーム「Q-me」の開発・運営プロジェクト。回答履歴からAIが性格やペルソナを導き出す「自己分析機能」と、回答直後に全体の意見分布や自身の立ち位置が可視化される「即時フィードバックシステム」を備える。学生の利用を通じて蓄積された良質な本音データを活用し、若年層の価値観リサーチを求める企業向けにデータ提供やソリューション提案を行うことでマネタイズを図る。",
+  "tags": [],
+  "link": "#",
+  "date": "TMU EntreBloom ビジネスアイデアチャレンジ 2025",
+  "image": "/works/busycom/01.jpg",
+  "images": [
+    "/works/busycom/02.jpg",
+    "/works/busycom/03.jpg",
+  ],
+  "concept": "学生間リサーチにおける「依頼のしづらさ」や「回答者側のメリットの欠如」という心理的・コスト的障壁を、能動的な回答動機によって解消することを目指す。金銭報酬に依存するのではなく、Z世代の「自分を知りたい欲求（自己理解）」と「他者と比較したい欲求（立ち位置の把握）」を体験価値として還元することで、学生がためらわずに問いを投げかけ合える環境を実現する。",
+  "content": "",
+  },
+
+
+
   {
     "id": "flower",
     "title": "Smile Flower",
-    "description": "単身世帯の社会的・情緒的孤独感の解決を目指し、「笑顔」と「花」の心理的効果を活用して遠隔の家族や友人と緩やかに繋がり合う花型コミュニケーションデバイス『Smile Flower』の開発プロジェクト。\n\nA development project for \"Smile Flower,\" a flower-shaped communication device designed to gently connect single-person households with distant family and friends by leveraging the psychological effects of \"smiles\" and \"flowers\" to combat social and emotional loneliness.",
+    "description": "単身世帯の社会的・情緒的孤独感の解決を目指し、「笑顔」と「花」の心理的効果を活用して遠隔の家族や友人と緩やかに繋がり合う花型コミュニケーションデバイス『Smile Flower』の開発プロジェクト。",
     "tags": [],
     "link": "#",
     "date": "2025 インタラクティブデザイン実習/演習Ⅱ",
@@ -152,7 +217,7 @@ export const projectsData: Project[] = [
       "/works/flower/03.jpg"
     ],
     "bgColor": "",
-    "concept": "笑顔を咲かせ、繋がりを届ける。笑顔と花の癒やし効果で能動的に笑顔をつくり、物理デバイスの開閉を通じて社会的孤独感を温和に解消する。\n\nblooming smiles, delivering connections. By leveraging the healing power of smiles and flowers to proactively evoke joy, we gently alleviate social isolation through the physical opening and closing of a device.",
+    "concept": "笑顔を咲かせ、繋がりを届ける。笑顔と花の癒やし効果で能動的に笑顔をつくり、物理デバイスの開閉を通じて社会的孤独感を温和に解消する。",
     "role": "",
     "introduction": "単身世帯者の増加: 2001年から2023年にかけて割合が約1.7倍（24.1%から34.0%）に増加。\n孤独感と健康リスク: 単身世帯者は「社会的孤独感」「情緒的孤独感」を感じやすく、その健康リスクは肥満や喫煙と同程度。睡眠の質の低下等により、5年後のうつ症状出現の確率が高い。\n笑顔と植物の効果: \n笑顔を作ることによってストレスホルモン（コルチゾールなど）が減少し血圧が低下する。\n植物や花、また笑顔を作ることでドーパミンの発生による快感が得られ、うつ状態の改善に有効とされる。",
     "system": "表情認識・通信: Webカメラで利用者の表情を捉え、PC上の ml5.js Face-detection を用いて3秒以上の笑顔を認識。その情報を WebSerialAPI を経由してPCとArduino接続された花型デバイスに送信し、サーボモーターを動作させて花びらを開閉。また、WebRTC（p5LiveMedia）を用いてお互いの表情をリアルタイムで確認可能。\n花びらの駆動メカニズム:\nサーボモーター（SG-5010）とArduinoを接続。\nモーターにより歯車が動き、外側の軸と接続されている部分が下がることで、花弁が開く物理構造。",
@@ -165,10 +230,12 @@ export const projectsData: Project[] = [
     "outcome": "アプローチ:\nPCカメラでの笑顔検出と、連動して動く物理的な花型デバイス、遠隔映像共有を組み合わせることで、日常生活の中に自然な「笑顔」を増やすとともに、離れた大切な人と緩やかに感情や状態を共有し合う体験。\n主な特徴:\n笑顔による開花インタラクション: デバイスに笑顔を3秒間向けることで、自身と相手の両方のデバイスの花びらが段階的に開花し、双方が笑顔を交わすことで満開に近づく仕組み。\n生活リズムへの配慮: 開花状態は毎日リセットされ、翌日には再び萎んだ状態から始まるため、毎日の新しいコミュニケーションのきっかけを提供。\nリアルタイム映像共有の併用: 花の開閉による非言語的な状態共有に加え、WebRTCを用いたリアルタイム映像確認も可能。",
     "survey": []
   },
+
+
   {
     "id": "bookdesign",
     "title": "Guns, Germs, and Steel (Book Design)",
-    "description": "書籍『Guns, Germs, and Steel（銃・病原菌・鉄）』の歴史的テーマに基づき、世界に格差が生まれた根源である「地理的要因」を、大地の素材である本物の石を用いたタイポグラフィで表現した書籍カバーデザインプロジェクト。\n\nA book cover design project that expresses \"geographical factors\"—the root cause of global inequality based on the historical themes of the book Guns, Germs, and Steel—through typography crafted from authentic stone, the very material of the earth.",
+    "description": "書籍『Guns, Germs, and Steel（銃・病原菌・鉄）』の歴史的テーマに基づき、世界に格差が生まれた根源である「地理的要因」を、大地の素材である本物の石を用いたタイポグラフィで表現した書籍カバーデザインプロジェクト。",
     "tags": [],
     "link": "#",
     "date": "2024 グラフィックデザイン実習/演習Ⅰ",
@@ -177,7 +244,7 @@ export const projectsData: Project[] = [
       "/works/bookdesign/02.jpg"
     ],
     "bgColor": "",
-    "concept": "地理的決定論の視覚化。文明発展の格差が地理的・生態学的要因によるものであるという本質を、大地の一部である「石」を用いたタイポグラフィで表現する。\n\nVisualizing geographical determinism. Using typography crafted from \"stones\"—elements of the earth—to express the essence that the disparities in civilizational development are driven by geographical and ecological factors.",
+    "concept": "地理的決定論の視覚化。文明発展の格差が地理的・生態学的要因によるものであるという本質を、大地の一部である「石」を用いたタイポグラフィで表現する。",
     "role": "",
     "introduction": "",
     "system": "",
@@ -190,10 +257,12 @@ export const projectsData: Project[] = [
     "outcome": "書名: Guns, Germs, and Steel: The Fates of Human Societies（邦題：銃・病原菌・鉄）\n著者: Jared Diamond\n表現上の特徴:\n人類史における人種の先天的な優劣を否定する、近代的な人類観の提示。\n文明発展の格差は、地理的・生態学的要因に起因するという革新的提言の視覚的実証。\n広範な学際的知見（地理学、生物学、歴史学、人類学など）に基づく壮大なコンセプトの再解釈。\nアプローチ:\n人種的な優劣ではなく地理的・生態学的要因が歴史の格差を生んだという「歴史の再解釈」のコンセプトに基づき、人為的な文字デザインではなく、大地の素材である「本物の石」をタイポグラフィとして構築する。\n主な特徴:\n大地の素材によるタイポグラフィ: 実際に拾い集めた「石」をアルファベットの形状に配置し、多様性や不規則性、複雑性を持つ大地の物質感を取り入れる。\n石のスキャンによるレイアウト: 物理的に並べた石をスキャナーで読み込み、独特のざらついた質感やリアリティを表現したカバーレイアウト。",
     "survey": []
   },
+
+
   {
     "id": "spacedesign",
     "title": "RAY",
-    "description": "ビル群に囲まれた都市空間において、日本庭園の「移ろい」の思想を着想源とし、太陽の動きがもたらす光と影の変化を1日を通じて体験できるオフィス街の庭園『RAY』の設計プロジェクト。\n\nA design project for \"RAY,\" an office district garden where the concept of \"utsuroi\" (transience) from Japanese gardens serves as the inspiration, allowing visitors to experience the shifting interplay of light and shadow driven by the sun's movement throughout the day within an urban space surrounded by skyscrapers.",
+    "description": "ビル群に囲まれた都市空間において、日本庭園の「移ろい」の思想を着想源とし、太陽の動きがもたらす光と影の変化を1日を通じて体験できるオフィス街の庭園『RAY』の設計プロジェクト。",
     "tags": [],
     "link": "#",
     "date": "2023 Basic of Space Design",
@@ -203,30 +272,32 @@ export const projectsData: Project[] = [
       "/works/spacedesign/03.jpg"
     ],
     "bgColor": "",
-    "concept": "時間とともに表情を変える庭。日本庭園の美学を都市空間に再解釈し、太陽の動きそのものを主役に据え、人々に変化に富んだ憩いの場を提供する。\n\nA garden that transforms with the passing hours. By reinterpreting the aesthetics of Japanese gardens within an urban setting and casting the movement of the sun as the protagonist, it offers people a dynamic sanctuary of shifting beauty.",
+    "concept": "時間とともに表情を変える庭。日本庭園の美学を都市空間に再解釈し、太陽の動きそのものを主役に据え、人々に変化に富んだ憩いの場を提供する。",
     "role": "",
     "introduction": "",
     "system": "構成要素 (Components):\nFlatroad: 平坦なアプローチ\nbench: 光の差し込み方に合わせて配置されたベンチ",
     "procedure": [
-      "プロセス / 着想 (Process): 四季の変化を取り入れる日本庭園の思想からインスピレーションを受け、1日を通じた微細な時間変化を楽しめる庭園を設計。出勤時（朝）、ランチ休憩（昼）、退勤時（夜）といった働く人のタイムラインに寄り添い、太陽の移動による光の表情の変化を取り入れた。\n時間帯別の演出想定 (Time Labels):\nMORNING (朝): 出勤時の爽やかな光\nEVENING (夕方): 退勤前のノスタルジックで長い影\nNIGHT (夜): 人工照明と闇のコントラスト"
+      "プロセス / 着想 (Process): 四季の変化を取り入れる日本庭園の思想からインスピレーションを受け、1日を通じた微細な時間変化を楽しめる庭園を設計。出勤時（朝）、ランチ休憩（昼）、退勤時（夜）といった働く人のタイムラインに寄り添い、太陽の移動による光の表情の変化を取り入れた。\n時間帯別の演出想定 (time Labels):\nMORNING (朝): 出勤時の爽やかな光\nEVENING (夕方): 退勤前のノスタルジックで長い影\nNIGHT (夜): 人工照明と闇のコントラスト"
     ],
     "outcome": "アプローチ:\n時間帯（出勤時、昼休み、退勤時）による太陽の軌道変化をデザインに取り入れ、都市の人工的な環境下で光と影の移ろいを魅力的に演出する空間構成。\n主な特徴:\n時間の変化を楽しむ庭園: 朝（MORNING）、夕方（EVENING）、夜（NIGHT）といった1日のタイムサイクルに合わせた光の差し込み方や影の形を活かす設計。\n光を引き立てる造形: 周囲のビル群（Built-up area）がもたらす幾何学的・人工的な環境に対し、自然光の美しさがより際立つ構造。",
     "survey": []
   },
+
+  
   {
     "id": "moon",
     "title": "月の歩き方",
-    "description": "月旅行における現地体験のリアリティ不足という課題に対し、旅行前から目的地での体験を具体的に計画・想像できるガイドブック『月の歩き方』の制作プロジェクト。\n\nA project to create \"The Moon Walk,\" a guidebook designed to help travelers concretely plan and visualize their experiences on the destination before departure, addressing the challenge of the lack of realism in on-site experiences during lunar travel.",
+    "description": "月旅行における現地体験のリアリティ不足という課題に対し、旅行前から目的地での体験を具体的に計画・想像できるガイドブック『月の歩き方』の制作プロジェクト。",
     "tags": [],
     "link": "#",
     "date": "2026 研究プロジェクト演習",
     "image": "/works/moon/01.jpg",
     "images": [
       "/works/moon/02.jpg",
-      "/works/moon/フライヤー_I班.jpg"
+      "/works/moon/03.jpg"
     ],
     "bgColor": "",
-    "concept": "行った気になる。旅行前の調べるワクワク感を再現し、月面をどう歩き何を感じるかという身体的体験と紙の触覚を通じて月を疑似体験させる。\n\nIt makes you feel as if you've actually been there. By recreating the excitement of researching before a trip, it allows you to pseudo-experience the Moon through the tactile sensation of paper and a physical simulation of how one would walk and feel on the lunar surface.",
+    "concept": "行った気になる。旅行前の調べるワクワク感を再現し、月面をどう歩き何を感じるかという身体的体験と紙の触覚を通じて月を疑似体験させる。",
     "role": "",
     "introduction": "",
     "system": "",
@@ -234,17 +305,19 @@ export const projectsData: Project[] = [
     "outcome": "アプローチ:\n歩行者の一人称視点（五感・スケール感）に特化した「行った気になる」ガイドブック。\n主な特徴:\n馴染み深いデザイン: 『地球の歩き方』をオマージュした親しみやすく完成度の高いデザイン。\nリアルな旅行計画の提示: 月面での酒造（獺祭 MOON）や宇宙美食など、実在するリアリティのある計画を掲載。\n立体モデルの併用: 3Dプリンターによる月面地形モデルを併用し、視覚と触覚の双方からアプローチ。",
     "survey": []
   },
+
+
   {
     "id": "accountbook",
     "title": "accountbook-obsidian",
-    "description": "手入力の手間やクラウドへのプライバシー懸念を解決するため、Gemini APIによる自動OCR解析とObsidianのローカル管理、iOSショートカットを連携させた個人用ローカル完結型家計簿システムの開発プロジェクト。\n\nA development project for a personal, locally-contained household account system that integrates Gemini API-powered automated OCR analysis, local management via Obsidian, and iOS Shortcuts to eliminate the hassle of manual entry and address privacy concerns regarding cloud storage.",
+    "description": "手入力の手間やクラウドへのプライバシー懸念を解決するため、Gemini APIによる自動OCR解析とObsidianのローカル管理、iOSショートカットを連携させた個人用ローカル完結型家計簿システムの開発プロジェクト。",
     "tags": [],
     "link": "#",
     "date": "2025-2026 自主制作",
     "image": "/works/accountbook/01.jpg",
     "images": [],
     "bgColor": "",
-    "concept": "ローカル・自動・可愛い家計簿。完全ローカルの安心感とAIによる手入力ゼロの快適さを両立し、可愛いダッシュボードで日々のお金の管理を楽しく継続させる。\n\nA local, automated, and cute household account book. Combining the peace of mind of a fully local system with the convenience of zero manual entry via AI, all within a cute dashboard that makes daily money management a joyful, sustainable habit.",
+    "concept": "ローカル・自動・可愛い家計簿。完全ローカルの安心感とAIによる手入力ゼロの快適さを両立し、可愛いダッシュボードで日々のお金の管理を楽しく継続させる。",
     "role": "",
     "introduction": "",
     "system": "エンジン（AI）: Gemini API (Gemini 2.5 Flash)\n監視スクリプト: Python 3.10+, watchdog\nフロントエンド / 可視化: Obsidian, Dataviewjs, Obsidian Charts\niOS連携: iOSショートカットアプリ\n動作環境: macOS (常時監視: launchd または python バックグラウンドプロセス), iOS",

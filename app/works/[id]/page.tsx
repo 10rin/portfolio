@@ -12,6 +12,35 @@ export async function generateStaticParams() {
 interface PageProps {
   params: Promise<{ id: string }>;
 }
+function renderTextWithLinks(text: string) {
+  const regex = /\[(.*?)\]\((.*?)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index));
+    }
+    const [_, linkText, linkUrl] = match;
+    parts.push(
+      <Link
+        key={match.index}
+        href={linkUrl}
+        className="underline hover:text-brand transition-colors"
+      >
+        {linkText}
+      </Link>
+    );
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts;
+}
 
 export default async function ProjectPage({ params }: PageProps) {
   const { id } = await params;
@@ -30,14 +59,14 @@ export default async function ProjectPage({ params }: PageProps) {
           {/* Hero Image (Thumbnail) */}
           {project.image && (
             <div 
-              className="w-full relative aspect-[4/3] overflow-hidden rounded-none border border-zinc-200/50 dark:border-zinc-800/80 flex items-center justify-center bg-zinc-100 dark:bg-zinc-800/50"
+              className="w-full relative overflow-hidden rounded-none border border-zinc-200/50 dark:border-zinc-800/80 flex items-center justify-center bg-zinc-100 dark:bg-zinc-800/50"
               style={project.bgColor ? { backgroundColor: project.bgColor } : undefined}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
                 src={project.image} 
                 alt={`${project.title} Cover`} 
-                className="max-h-full max-w-full object-contain" 
+                className="w-full h-auto block" 
               />
             </div>
           )}
@@ -62,6 +91,7 @@ export default async function ProjectPage({ params }: PageProps) {
               </div>
             </div>
           )}
+
         </div>
 
         {/* Right Column: Text Content */}
@@ -73,12 +103,23 @@ export default async function ProjectPage({ params }: PageProps) {
                 {project.date}
               </span>
             )}
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
               {project.title}
             </h1>
+            {/* link*/}
+            {project.link && project.link !== "#" && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xl font-medium text-brand hover:underline"            >
+                Visit Website
+              </a>
+            )}
+
           </div>
 
-          {/* Tags */}
+          {/* Tags
           {project.tags && project.tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-2">
               {project.tags.map((tag, idx) => (
@@ -90,16 +131,16 @@ export default async function ProjectPage({ params }: PageProps) {
                 </span>
               ))}
             </div>
-          )}
+          )} */}
 
           {/* overview */}
           {project.description && (
             <div className="space-y-4">
-              <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-zinc-900 dark:text-zinc-100">
                 overview
               </h2>
-              <p className="text-xl leading-relaxed text-zinc-600 dark:text-zinc-400 whitespace-pre-wrap">
-                {project.description}
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-600 dark:text-zinc-400 whitespace-pre-wrap">
+                {renderTextWithLinks(project.description)}
               </p>
             </div>
           )}
@@ -107,14 +148,27 @@ export default async function ProjectPage({ params }: PageProps) {
           {/* Concept */}
           {project.concept && (
             <div className="space-y-4">
-              <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-zinc-900 dark:text-zinc-100">
                 concept
               </h2>
-              <p className="text-xl leading-relaxed text-zinc-600 dark:text-zinc-400 whitespace-pre-wrap">
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-600 dark:text-zinc-400 whitespace-pre-wrap">
                 {project.concept}
               </p>
             </div>
           )}
+          
+          {/* Content */}
+          {project.content && (
+            <div className="space-y-4">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+                content
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-600 dark:text-zinc-400 whitespace-pre-wrap">
+                {project.content}
+              </p>
+            </div>
+          )}
+
         </div>
       </div>
     </main>

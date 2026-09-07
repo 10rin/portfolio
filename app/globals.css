@@ -26,3 +26,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
 }
+/* 通常のカーソル（直径 16px のピンクの丸） */
+body, a, button, [role="button"] {
+  cursor: url("/cursor.svg") 8 8, auto;
+}
+
+
+

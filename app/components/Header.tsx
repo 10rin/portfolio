@@ -13,7 +13,7 @@ export default function Header() {
         {isProjectDetail ? (
           <Link 
             href="/" 
-            className="group inline-flex items-center gap-2 text-xl font-semibold text-zinc-600 dark:text-zinc-400 hover:text-brand transition-colors cursor-pointer"
+            className="group inline-flex items-center gap-2 text-base sm:text-lg md:text-xl font-semibold text-zinc-600 dark:text-zinc-400 hover:text-brand transition-colors cursor-pointer"
             
           >
             <svg 
@@ -30,13 +30,13 @@ export default function Header() {
         ) : (
           <Link 
             href="/" 
-            className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 hover:text-brand transition-colors"
+            className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50 hover:text-brand transition-colors"
           >
             rin_nonokawa
           </Link>
         )}
         
-        <nav className="flex items-center gap-6 text-xl font-medium text-zinc-600 dark:text-zinc-400">
+        <nav className="flex items-center gap-4 sm:gap-6 text-sm sm:text-base md:text-xl font-medium text-zinc-600 dark:text-zinc-400">
           <Link href="/" className={`hover:text-brand transition-colors ${pathname === '/' ? 'text-brand' : ''}`}>
             works
           </Link>
